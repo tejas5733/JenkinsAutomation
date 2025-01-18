@@ -6,7 +6,7 @@ pipeline {
 	stages {
 	    stage('Git CheckOut') {
 		    steps {
-			   checkout([$class: 'GitSCM', branches: [[name: '*/dragon']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/logicopslab/rock-paper-scissors.git']]])
+			   checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/tejas5733/JenkinsAutomation.git']]])
 			}
 		}
         stage('Clean and Install') {
